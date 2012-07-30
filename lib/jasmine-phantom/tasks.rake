@@ -13,7 +13,7 @@ namespace :jasmine do
 
       script = File.join File.dirname(__FILE__), 'run-jasmine.js'
 
-      pid = Process.spawn "phantomjs #{script} http://localhost:#{port}"
+      pid = POSIX::Spawn.spawn('phantomjs', script, "http://localhost:#{port}")
 
       begin
         Thread.pass

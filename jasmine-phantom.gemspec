@@ -27,4 +27,5 @@ Gem::Specification.new do |s|
   # s.add_development_dependency "rspec"
   s.add_runtime_dependency "rails", '>= 2.0'
   s.add_runtime_dependency "jasmine", '>= 1.2.0'
+  s.add_runtime_dependency "posix-spawn"
 end
